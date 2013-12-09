@@ -1,0 +1,39 @@
+{
+	"variables": {
+		"home_dir": "Users/joel"
+	},
+	"builders": [{
+		"type": "vmware",
+	  "iso_url": "{{user `home_dir`}}/Workspace/isos/ubuntu-12.04.3-server-amd64.iso",
+	  "iso_checksum": "2cbe868812a871242cdcdd8f2fd6feb9",
+	  "iso_checksum_type": "md5",
+	  "ssh_username": "administrator",
+	  "ssh_password": "admin",
+	  "ssh_wait_timeout": "10m",
+	  "http_directory": "http",
+	  "output_directory": "{{user `home_dir`}}/Documents/images/packer-test/",
+	  "vm_name": "packer-test",
+	  "vmdk_name": "packer-test",
+	  "boot_command": [
+		  "<esc><esc><enter><wait>",
+		  "/install/vmlinuz noapic ",
+		  "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ",
+		  "debian-installer=en_US auto locale=en_US kbd-chooser/method=us ",
+		  "hostname={{ .Name }} ",
+		  "fb=false debconf/frontend=noninteractive ",
+		  "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA ",
+		  "keyboard-configuration/variant=USA console-setup/ask_detect=false ",
+		  "initrd=/install/initrd.gz -- <enter>"
+	  ],
+	  "shutdown_command": "shutdown -P now"
+	}],
+	"provisioners": [{
+		"type": "shell",
+		"execute_command": "echo 'admin' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
+		"inline": [
+			"sleep 30",
+			"echo updating",
+			"apt-get update"
+		]
+	}]
+}
