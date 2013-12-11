@@ -4,14 +4,15 @@
 	},
 	"builders": [{
 		"type": "vmware",
-	  "iso_url": "{{user `home_dir`}}/Workspace/isos/ubuntu-12.04.3-server-amd64.iso",
+	  "iso_url": "/{{user `home_dir`}}/Workspace/isos/ubuntu-12.04.3-server-amd64.iso",
+	  "guest_os_type": "ubuntu-64",
 	  "iso_checksum": "2cbe868812a871242cdcdd8f2fd6feb9",
 	  "iso_checksum_type": "md5",
 	  "ssh_username": "administrator",
 	  "ssh_password": "admin",
 	  "ssh_wait_timeout": "10m",
 	  "http_directory": "http",
-	  "output_directory": "{{user `home_dir`}}/Documents/images/packer-test/",
+	  "output_directory": "/{{user `home_dir`}}/Documents/images/packer-test/",
 	  "vm_name": "packer-test",
 	  "vmdk_name": "packer-test",
 	  "boot_command": [
@@ -25,7 +26,13 @@
 		  "keyboard-configuration/variant=USA console-setup/ask_detect=false ",
 		  "initrd=/install/initrd.gz -- <enter>"
 	  ],
-	  "shutdown_command": "shutdown -P now"
+	  "shutdown_command": "echo 'admin'|sudo -S shutdown -P now",
+	  "disk_size": 10140,
+	  "vmx_data": {
+      "memsize": "512",
+      "numvcpus": "1",
+      "cpuid.coresPerSocket": "1"
+    }
 	}],
 	"provisioners": [{
 		"type": "shell",

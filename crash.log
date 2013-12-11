@@ -1,145 +1,145 @@
-2013/12/09 15:00:56 Packer Version: 0.4.1  12ba7ae443f5c0eada81a9cbdd05bc4826f51d81
-2013/12/09 15:00:56 Packer Target OS/Arch: darwin amd64
-2013/12/09 15:00:56 Built with Go Version: go1.2
-2013/12/09 15:00:56 Detected home directory from env var: /Users/joel
-2013/12/09 15:00:56 Attempting to open config file: /Users/joel/.packerconfig
-2013/12/09 15:00:56 File doesn't exist, but doesn't need to. Ignoring.
-2013/12/09 15:00:56 Packer config: &{PluginMinPort:0 PluginMaxPort:0 Builders:map[digitalocean:packer-builder-digitalocean virtualbox:packer-builder-virtualbox amazon-ebs:packer-builder-amazon-ebs amazon-chroot:packer-builder-amazon-chroot amazon-instance:packer-builder-amazon-instance docker:packer-builder-docker openstack:packer-builder-openstack qemu:packer-builder-qemu vmware:packer-builder-vmware] Commands:map[build:packer-command-build fix:packer-command-fix inspect:packer-command-inspect validate:packer-command-validate] PostProcessors:map[vagrant:packer-post-processor-vagrant vsphere:packer-post-processor-vsphere] Provisioners:map[ansible-local:packer-provisioner-ansible-local chef-solo:packer-provisioner-chef-solo file:packer-provisioner-file puppet-masterless:packer-provisioner-puppet-masterless shell:packer-provisioner-shell salt-masterless:packer-provisioner-salt-masterless]}
-2013/12/09 15:00:56 Setting cache directory: /Users/joel/Workspace/code/packer-test/packer_cache
-2013/12/09 15:00:56 Environment.Cli: []string{"build", "base.json"}
-2013/12/09 15:00:56 command + args: []string{"build", "base.json"}
-2013/12/09 15:00:56 Loading command: build
-2013/12/09 15:00:56 Creating plugin client for path: /usr/local/bin/packer-command-build
-2013/12/09 15:00:56 Starting plugin: /usr/local/bin/packer-command-build []string{"/usr/local/bin/packer-command-build"}
-2013/12/09 15:00:56 Waiting for RPC address for: /usr/local/bin/packer-command-build
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Preparing to serve a command plugin...
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Plugin build against Packer '12ba7ae443f5c0eada81a9cbdd05bc4826f51d81'
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Plugin minimum port: 10000
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Plugin maximum port: 25000
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Plugin address: 127.0.0.1:10000
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Waiting for connection...
-2013/12/09 15:00:56 Executing command: build
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Serving a plugin connection...
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Reading template: base.json
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Creating build: vmware
-2013/12/09 15:00:56 Loading builder: vmware
-2013/12/09 15:00:56 Creating plugin client for path: /usr/local/bin/packer-builder-vmware
-2013/12/09 15:00:56 Starting plugin: /usr/local/bin/packer-builder-vmware []string{"/usr/local/bin/packer-builder-vmware"}
-2013/12/09 15:00:56 Waiting for RPC address for: /usr/local/bin/packer-builder-vmware
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 2013/12/09 15:00:56 Preparing to serve a builder plugin...
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 2013/12/09 15:00:56 Plugin build against Packer '12ba7ae443f5c0eada81a9cbdd05bc4826f51d81'
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 2013/12/09 15:00:56 Plugin minimum port: 10000
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 2013/12/09 15:00:56 Plugin maximum port: 25000
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 2013/12/09 15:00:56 Plugin address: 127.0.0.1:10002
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 2013/12/09 15:00:56 Waiting for connection...
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 2013/12/09 15:00:56 Serving a plugin connection...
-2013/12/09 15:00:56 Loading provisioner: shell
-2013/12/09 15:00:56 Creating plugin client for path: /usr/local/bin/packer-provisioner-shell
-2013/12/09 15:00:56 Starting plugin: /usr/local/bin/packer-provisioner-shell []string{"/usr/local/bin/packer-provisioner-shell"}
-2013/12/09 15:00:56 Waiting for RPC address for: /usr/local/bin/packer-provisioner-shell
-2013/12/09 15:00:56 /usr/local/bin/packer-provisioner-shell: 2013/12/09 15:00:56 Preparing to serve a provisioner plugin...
-2013/12/09 15:00:56 /usr/local/bin/packer-provisioner-shell: 2013/12/09 15:00:56 Plugin build against Packer '12ba7ae443f5c0eada81a9cbdd05bc4826f51d81'
-2013/12/09 15:00:56 /usr/local/bin/packer-provisioner-shell: 2013/12/09 15:00:56 Plugin minimum port: 10000
-2013/12/09 15:00:56 /usr/local/bin/packer-provisioner-shell: 2013/12/09 15:00:56 Plugin maximum port: 25000
-2013/12/09 15:00:56 /usr/local/bin/packer-provisioner-shell: 2013/12/09 15:00:56 Plugin address: 127.0.0.1:10004
-2013/12/09 15:00:56 /usr/local/bin/packer-provisioner-shell: 2013/12/09 15:00:56 Waiting for connection...
-2013/12/09 15:00:56 /usr/local/bin/packer-provisioner-shell: 2013/12/09 15:00:56 Serving a plugin connection...
-2013/12/09 15:00:56 ui: [1;32mvmware output will be in this color.[0m
-2013/12/09 15:00:56 ui: 
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Build debug mode: false
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Force build: false
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Preparing build: vmware
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Waiting on builds to complete...
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Starting build run: vmware
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Running builder: vmware
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 2013/12/09 15:00:56 Error in Ui RPC call: unexpected EOF
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 2013/12/09 15:00:56 Error in Ui RPC call: connection is shut down
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 2013/12/09 15:00:56 Acquiring lock to download: file:///Users/joel/Workspace/isos/ubuntu-12.04.3-server-amd64.iso
-2013/12/09 15:00:56 ui error: [1;31mBuild 'vmware' errored: Error waiting for Run: EOF[0m
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: 2013/12/09 15:00:56 Builds completed. Waiting on interrupt barrier...
-2013/12/09 15:00:56 machine readable: error-count []string{"1"}
-2013/12/09 15:00:56 ui error: 
+2013/12/09 18:58:43 Packer Version: 0.4.1  12ba7ae443f5c0eada81a9cbdd05bc4826f51d81
+2013/12/09 18:58:43 Packer Target OS/Arch: darwin amd64
+2013/12/09 18:58:43 Built with Go Version: go1.2
+2013/12/09 18:58:43 Detected home directory from env var: /Users/joel
+2013/12/09 18:58:43 Attempting to open config file: /Users/joel/.packerconfig
+2013/12/09 18:58:43 File doesn't exist, but doesn't need to. Ignoring.
+2013/12/09 18:58:43 Packer config: &{PluginMinPort:0 PluginMaxPort:0 Builders:map[amazon-instance:packer-builder-amazon-instance openstack:packer-builder-openstack qemu:packer-builder-qemu virtualbox:packer-builder-virtualbox amazon-ebs:packer-builder-amazon-ebs amazon-chroot:packer-builder-amazon-chroot digitalocean:packer-builder-digitalocean docker:packer-builder-docker vmware:packer-builder-vmware] Commands:map[build:packer-command-build fix:packer-command-fix inspect:packer-command-inspect validate:packer-command-validate] PostProcessors:map[vagrant:packer-post-processor-vagrant vsphere:packer-post-processor-vsphere] Provisioners:map[ansible-local:packer-provisioner-ansible-local chef-solo:packer-provisioner-chef-solo file:packer-provisioner-file puppet-masterless:packer-provisioner-puppet-masterless shell:packer-provisioner-shell salt-masterless:packer-provisioner-salt-masterless]}
+2013/12/09 18:58:43 Setting cache directory: /Users/joel/Workspace/code/packer-test/packer_cache
+2013/12/09 18:58:43 Environment.Cli: []string{"build", "base.json"}
+2013/12/09 18:58:43 command + args: []string{"build", "base.json"}
+2013/12/09 18:58:43 Loading command: build
+2013/12/09 18:58:43 Creating plugin client for path: /usr/local/bin/packer-command-build
+2013/12/09 18:58:43 Starting plugin: /usr/local/bin/packer-command-build []string{"/usr/local/bin/packer-command-build"}
+2013/12/09 18:58:43 Waiting for RPC address for: /usr/local/bin/packer-command-build
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Preparing to serve a command plugin...
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Plugin build against Packer '12ba7ae443f5c0eada81a9cbdd05bc4826f51d81'
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Plugin minimum port: 10000
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Plugin maximum port: 25000
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Plugin address: 127.0.0.1:10000
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Waiting for connection...
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Serving a plugin connection...
+2013/12/09 18:58:43 Executing command: build
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Reading template: base.json
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Creating build: vmware
+2013/12/09 18:58:43 Loading builder: vmware
+2013/12/09 18:58:43 Creating plugin client for path: /usr/local/bin/packer-builder-vmware
+2013/12/09 18:58:43 Starting plugin: /usr/local/bin/packer-builder-vmware []string{"/usr/local/bin/packer-builder-vmware"}
+2013/12/09 18:58:43 Waiting for RPC address for: /usr/local/bin/packer-builder-vmware
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 2013/12/09 18:58:43 Preparing to serve a builder plugin...
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 2013/12/09 18:58:43 Plugin build against Packer '12ba7ae443f5c0eada81a9cbdd05bc4826f51d81'
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 2013/12/09 18:58:43 Plugin minimum port: 10000
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 2013/12/09 18:58:43 Plugin maximum port: 25000
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 2013/12/09 18:58:43 Plugin address: 127.0.0.1:10002
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 2013/12/09 18:58:43 Waiting for connection...
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 2013/12/09 18:58:43 Serving a plugin connection...
+2013/12/09 18:58:43 Loading provisioner: shell
+2013/12/09 18:58:43 Creating plugin client for path: /usr/local/bin/packer-provisioner-shell
+2013/12/09 18:58:43 Starting plugin: /usr/local/bin/packer-provisioner-shell []string{"/usr/local/bin/packer-provisioner-shell"}
+2013/12/09 18:58:43 Waiting for RPC address for: /usr/local/bin/packer-provisioner-shell
+2013/12/09 18:58:43 /usr/local/bin/packer-provisioner-shell: 2013/12/09 18:58:43 Preparing to serve a provisioner plugin...
+2013/12/09 18:58:43 /usr/local/bin/packer-provisioner-shell: 2013/12/09 18:58:43 Plugin build against Packer '12ba7ae443f5c0eada81a9cbdd05bc4826f51d81'
+2013/12/09 18:58:43 /usr/local/bin/packer-provisioner-shell: 2013/12/09 18:58:43 Plugin minimum port: 10000
+2013/12/09 18:58:43 /usr/local/bin/packer-provisioner-shell: 2013/12/09 18:58:43 Plugin maximum port: 25000
+2013/12/09 18:58:43 /usr/local/bin/packer-provisioner-shell: 2013/12/09 18:58:43 Plugin address: 127.0.0.1:10004
+2013/12/09 18:58:43 /usr/local/bin/packer-provisioner-shell: 2013/12/09 18:58:43 Waiting for connection...
+2013/12/09 18:58:43 /usr/local/bin/packer-provisioner-shell: 2013/12/09 18:58:43 Serving a plugin connection...
+2013/12/09 18:58:43 ui: [1;32mvmware output will be in this color.[0m
+2013/12/09 18:58:43 ui: 
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Build debug mode: false
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Force build: false
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Preparing build: vmware
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Waiting on builds to complete...
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Starting build run: vmware
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Running builder: vmware
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 2013/12/09 18:58:43 Error in Ui RPC call: unexpected EOF
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 2013/12/09 18:58:43 Error in Ui RPC call: connection is shut down
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 2013/12/09 18:58:43 Acquiring lock to download: file:///Users/joel/Workspace/isos/ubuntu-12.04.3-server-amd64.iso
+2013/12/09 18:58:43 ui error: [1;31mBuild 'vmware' errored: Error waiting for Run: EOF[0m
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: 2013/12/09 18:58:43 Builds completed. Waiting on interrupt barrier...
+2013/12/09 18:58:43 machine readable: error-count []string{"1"}
+2013/12/09 18:58:43 ui error: 
 ==> Some builds didn't complete successfully and had errors:
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: panic: connection is shut down
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: goroutine 41 [running]:
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: runtime.panic(0x360b40, 0xc21000a840)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/runtime/panic.c:266 +0xb6
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/packer/rpc.(*cache).Lock(0xc2100ce270, 0xc2100c40f0, 0x41, 0x1, 0x1)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/rpc/cache.go:31 +0xd1
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/common.(*StepDownload).Run(0xc2100d2620, 0x9b9018, 0xc2100db0f0, 0x0)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/common/step_download.go:63 +0x649
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/multistep.(*BasicRunner).Run(0xc2100d3340, 0x9b9018, 0xc2100db0f0)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/multistep/basic_runner.go:70 +0x341
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/builder/vmware.(*Builder).Run(0xc21000b500, 0x9b8ae0, 0xc2100ce280, 0x9b8b28, 0xc2100ce278, ...)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/builder/vmware/builder.go:445 +0xcd3
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/packer/rpc.func·003()
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/rpc/builder.go:150 +0x19c
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: created by github.com/mitchellh/packer/packer/rpc.(*BuilderServer).Run
-2013/12/09 15:00:56 machine readable: vmware,error []string{"Error waiting for Run: EOF"}
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/rpc/builder.go:168 +0x197
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: goroutine 1 [IO wait]:
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: net.runtime_pollWait(0x9b8670, 0x72, 0x0)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/runtime/netpoll.goc:116 +0x6a
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: net.(*pollDesc).Wait(0xc210046f40, 0x72, 0x9b70c0, 0x23)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/fd_poll_runtime.go:81 +0x34
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: net.(*pollDesc).WaitRead(0xc210046f40, 0x23, 0x9b70c0)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/fd_poll_runtime.go:86 +0x30
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: net.(*netFD).Read(0xc210046ee0, 0xc21007a000, 0x1000, 0x1000, 0x0, ...)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/fd_unix.go:204 +0x2a0
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: net.(*conn).Read(0xc2100003f0, 0xc21007a000, 0x1000, 0x1000, 0x11000111, ...)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/net.go:122 +0xc5
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: bufio.(*Reader).fill(0xc21005f3c0)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/bufio/bufio.go:91 +0x110
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: bufio.(*Reader).Read(0xc21005f3c0, 0xc21000ac90, 0x1, 0x9, 0x1, ...)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/bufio/bufio.go:159 +0x1a4
-2013/12/09 15:00:56 ui error: --> vmware: Error waiting for Run: EOF
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: io.ReadAtLeast(0x9b88d0, 0xc21005f3c0, 0xc21000ac90, 0x1, 0x9, ...)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/io/io.go:288 +0xf6
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: io.ReadFull(0x9b88d0, 0xc21005f3c0, 0xc21000ac90, 0x1, 0x9, ...)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/io/io.go:306 +0x71
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: encoding/gob.decodeUintReader(0x9b88d0, 0xc21005f3c0, 0xc21000ac90, 0x9, 0x9, ...)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/encoding/gob/decode.go:66 +0x98
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: encoding/gob.(*Decoder).recvMessage(0xc2100730f0, 0xc21007c500)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/encoding/gob/decoder.go:73 +0x57
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: encoding/gob.(*Decoder).decodeTypeSequence(0xc2100730f0, 0xc210072800, 0x160)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/encoding/gob/decoder.go:159 +0x49
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: encoding/gob.(*Decoder).DecodeValue(0xc2100730f0, 0x2c4980, 0xc2100728a0, 0x160, 0x0, ...)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/encoding/gob/decoder.go:223 +0x12e
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: encoding/gob.(*Decoder).Decode(0xc2100730f0, 0x2c4980, 0xc2100728a0, 0x0, 0x0)
-2013/12/09 15:00:56 ui: 
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: panic: connection is shut down
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: goroutine 41 [running]:
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: runtime.panic(0x360b40, 0xc21000a840)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/runtime/panic.c:266 +0xb6
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/packer/rpc.(*cache).Lock(0xc2100001f0, 0xc2100c90a0, 0x41, 0x1, 0x1)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/rpc/cache.go:31 +0xd1
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/common.(*StepDownload).Run(0xc2100ad230, 0x9b91b0, 0xc2100a98a0, 0x0)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/common/step_download.go:63 +0x649
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/multistep.(*BasicRunner).Run(0xc2100aefc0, 0x9b91b0, 0xc2100a98a0)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/multistep/basic_runner.go:70 +0x341
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/builder/vmware.(*Builder).Run(0xc21000b500, 0x9b8c78, 0xc210000200, 0x9b8cc0, 0xc2100001f8, ...)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/builder/vmware/builder.go:445 +0xcd3
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/packer/rpc.func·003()
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/rpc/builder.go:150 +0x19c
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: created by github.com/mitchellh/packer/packer/rpc.(*BuilderServer).Run
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/rpc/builder.go:168 +0x197
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: goroutine 1 [IO wait]:
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: net.runtime_pollWait(0x9b8670, 0x72, 0x0)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/runtime/netpoll.goc:116 +0x6a
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: net.(*pollDesc).Wait(0xc210046f40, 0x72, 0x9b70c0, 0x23)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/fd_poll_runtime.go:81 +0x34
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: net.(*pollDesc).WaitRead(0xc210046f40, 0x23, 0x9b70c0)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/fd_poll_runtime.go:86 +0x30
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: net.(*netFD).Read(0xc210046ee0, 0xc21007a000, 0x1000, 0x1000, 0x0, ...)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/fd_unix.go:204 +0x2a0
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: net.(*conn).Read(0xc2100003f0, 0xc21007a000, 0x1000, 0x1000, 0x11000111, ...)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/net.go:122 +0xc5
+2013/12/09 18:58:43 machine readable: vmware,error []string{"Error waiting for Run: EOF"}
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: bufio.(*Reader).fill(0xc2100573c0)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/bufio/bufio.go:91 +0x110
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: bufio.(*Reader).Read(0xc2100573c0, 0xc21000ac90, 0x1, 0x9, 0x1, ...)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/bufio/bufio.go:159 +0x1a4
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: io.ReadAtLeast(0x9b88d0, 0xc2100573c0, 0xc21000ac90, 0x1, 0x9, ...)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/io/io.go:288 +0xf6
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: io.ReadFull(0x9b88d0, 0xc2100573c0, 0xc21000ac90, 0x1, 0x9, ...)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/io/io.go:306 +0x71
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: encoding/gob.decodeUintReader(0x9b88d0, 0xc2100573c0, 0xc21000ac90, 0x9, 0x9, ...)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/encoding/gob/decode.go:66 +0x98
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: encoding/gob.(*Decoder).recvMessage(0xc2100730f0, 0xc21007c600)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/encoding/gob/decoder.go:73 +0x57
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: encoding/gob.(*Decoder).decodeTypeSequence(0xc2100730f0, 0xc210072800, 0x160)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/encoding/gob/decoder.go:159 +0x49
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: encoding/gob.(*Decoder).DecodeValue(0xc2100730f0, 0x2c4980, 0xc2100728a0, 0x160, 0x0, ...)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/encoding/gob/decoder.go:223 +0x12e
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: encoding/gob.(*Decoder).Decode(0xc2100730f0, 0x2c4980, 0xc2100728a0, 0x0, 0x0)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/encoding/gob/decoder.go:202 +0x1c5
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: net/rpc.(*gobServerCodec).ReadRequestHeader(0xc2100780f0, 0xc2100728a0, 0xc0b5, 0xc21002c800)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/rpc/server.go:400 +0x3f
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: net/rpc.(*Server).readRequestHeader(0xc210062980, 0x9b8920, 0xc2100780f0, 0x0, 0x0, ...)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/rpc/server.go:551 +0x9b
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: net/rpc.(*Server).readRequest(0xc210062980, 0x9b8920, 0xc2100780f0, 0xc21005d780, 0xc21004fc80, ...)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/rpc/server.go:518 +0xa0
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: net/rpc.(*Server).ServeCodec(0xc210062980, 0x9b8920, 0xc2100780f0)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/rpc/server.go:437 +0x66
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: net/rpc.(*Server).ServeConn(0xc210062980, 0x9b8820, 0xc2100003f0)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/rpc/server.go:429 +0x140
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/packer/plugin.serve(0xc210062980, 0x0, 0x0)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/plugin/plugin.go:98 +0xa3c
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/packer/plugin.ServeBuilder(0x9b7670, 0xc21000b500)
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/plugin/plugin.go:126 +0x138
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: main.main()
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/plugin/builder-vmware/main.go:9 +0x53
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: goroutine 3 [syscall]:
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: os/signal.loop()
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/os/signal/signal_unix.go:21 +0x1e
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: created by os/signal.init·1
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/os/signal/signal_unix.go:27 +0x31
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: goroutine 5 [chan receive]:
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/packer/plugin.func·018()
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/plugin/plugin.go:111 +0x3c
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: created by github.com/mitchellh/packer/packer/plugin.countInterrupts
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/plugin/plugin.go:115 +0xf0
+2013/12/09 18:58:43 ui error: --> vmware: Error waiting for Run: EOF
+2013/12/09 18:58:43 /usr/local/bin/packer-builder-vmware: plugin process exited
+2013/12/09 18:58:43 ui: 
 ==> Builds finished but no artifacts were created.
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/encoding/gob/decoder.go:202 +0x1c5
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: net/rpc.(*gobServerCodec).ReadRequestHeader(0xc2100780f0, 0xc2100728a0, 0xc0b5, 0x858240)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/rpc/server.go:400 +0x3f
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: net/rpc.(*Server).readRequestHeader(0xc21006b980, 0x9b8920, 0xc2100780f0, 0x0, 0x0, ...)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/rpc/server.go:551 +0x9b
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: net/rpc.(*Server).readRequest(0xc21006b980, 0x9b8920, 0xc2100780f0, 0xc210065780, 0xc21004fc80, ...)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/rpc/server.go:518 +0xa0
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: net/rpc.(*Server).ServeCodec(0xc21006b980, 0x9b8920, 0xc2100780f0)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/rpc/server.go:437 +0x66
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: net/rpc.(*Server).ServeConn(0xc21006b980, 0x9b8820, 0xc2100003f0)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/net/rpc/server.go:429 +0x140
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/packer/plugin.serve(0xc21006b980, 0x0, 0x0)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/plugin/plugin.go:98 +0xa3c
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/packer/plugin.ServeBuilder(0x9b7670, 0xc21000b500)
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/plugin/plugin.go:126 +0x138
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: main.main()
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/plugin/builder-vmware/main.go:9 +0x53
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: goroutine 3 [syscall]:
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: os/signal.loop()
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/os/signal/signal_unix.go:21 +0x1e
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: created by os/signal.init·1
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/go/src/pkg/os/signal/signal_unix.go:27 +0x31
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: goroutine 5 [chan receive]:
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: github.com/mitchellh/packer/packer/plugin.func·018()
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/plugin/plugin.go:111 +0x3c
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: created by github.com/mitchellh/packer/packer/plugin.countInterrupts
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: 	/Users/mitchellh/code/go/src/github.com/mitchellh/packer/packer/plugin/plugin.go:115 +0xf0
-2013/12/09 15:00:56 waiting for all plugin processes to complete...
-2013/12/09 15:00:56 /usr/local/bin/packer-builder-vmware: plugin process exited
-2013/12/09 15:00:56 /usr/local/bin/packer-provisioner-shell: plugin process exited
-2013/12/09 15:00:56 /usr/local/bin/packer-command-build: plugin process exited
+2013/12/09 18:58:43 waiting for all plugin processes to complete...
+2013/12/09 18:58:43 /usr/local/bin/packer-provisioner-shell: plugin process exited
+2013/12/09 18:58:43 /usr/local/bin/packer-command-build: plugin process exited
